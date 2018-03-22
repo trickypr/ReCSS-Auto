@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "StyleSheet Auto Realoder",
+    "version": "1.0",
+
+    "description": "Reloads style sheets. I can not take crediti for the code behind this I found it here: https://calvincorreli.com/blog/1145-re-recss",
+
+    "icons": {
+        "512": "icon.svg"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["ReCSS.js"]
+        }
+    ]
+
+}
