@@ -1,20 +1,16 @@
 {
+  "manifest_version": 2,
+  "name": "StyleSheet Auto Realoder",
+  "version": "1.0",
 
-    "manifest_version": 2,
-    "name": "StyleSheet Auto Realoder",
-    "version": "1.0",
+  "description": "Reloads style sheets on page load. I built this for use on networks where the settings have been miss configured. The code is baised on the bookmarklet I found at https://jaysoo.ca/2009/09/11/recss-bookmarklet/",
 
-    "description": "Reloads style sheets. I can not take crediti for the code behind this I found it here: https://calvincorreli.com/blog/1145-re-recss",
+  "icons": {
+    "512": "icon.svg"
+  },
 
-    "icons": {
-        "512": "icon.svg"
-    },
-
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["ReCSS.js"]
-        }
-    ]
-
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["ReCSS.js"]
+  }]
 }
