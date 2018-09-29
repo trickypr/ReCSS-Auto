@@ -6,7 +6,17 @@
   "description": "Reloads style sheets on page load. I built this for use on networks where the settings have been miss configured. The code is baised on the bookmarklet I found at https://jaysoo.ca/2009/09/11/recss-bookmarklet/",
 
   "icons": {
-    "512": "icon.svg"
+    "512": "icons/icon.svg"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/icon.svg",
+    "default_title": "ReCSS Auto",
+    "default_popup": "popup/index.html"
   },
 
   "content_scripts": [{
